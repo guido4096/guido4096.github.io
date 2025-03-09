@@ -1,2 +1,23 @@
-<a href="https://github.com/guido4096">See my githib profile on https://github.com/guido4096</a>
+<a href="https://github.com/guido4096">See https://github.com/guido4096 for GitHub projects.</a>
 
+<a href=""https://github.com/guido4096/LilyGO-ModbusGateway"> 
+<h1 align = "center">🌟LilyGO T-POE-PRO Modbus Gateway between SolarEdge/RTU and EM24/TCP</h1>
+</a>
+
+This is a gateway to connect a SolarEdge inverter to your own energy meter. 
+
+SolarEdge can only communicate to a specific set of energy meters, sold by SolarEdge.
+These meters are expensive and it adds clutter to your electricity cabinet when you
+already have an energy meter. 
+
+This projects aims to reuse your own energy meter. This projects mimics a WattNode 
+meter, which is compatible with SolarEdge and well documented. It retrieves the 
+energy and power values from a Carlo Gavazzi EM24 energy meter, which it then translates
+to the WattNode definitions. 
+
+It not only converts the different energy meter definitions, it also converts the physical 
+layer between Modbus-RTU and Modbus-TCP.
+
+The SolarEdge inverter connects to the LilyGO ETH-POE-PRO through Modbus-RTU over RS-485.
+The LilyGO-POE-PRO connects to a Carlo Gavazzi EM24 through Modbus-TCP.
+The gateway translates the registers and values as needed.
